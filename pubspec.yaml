@@ -1,0 +1,65 @@
+name: ringo_dev_task
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  #showing svg images
+  flutter_svg: ^2.0.10+1
+
+  # state management
+  flutter_bloc: ^8.1.5
+
+  # code generator for data-classes/unions ( mainly used with bloc & retrofit )
+  freezed: ^2.4.7
+  freezed_annotation: ^2.4.1
+
+  # for adapting screen and font size for different devices
+  flutter_screenutil: ^5.9.3
+
+  # for showing date and time picker timeline
+  date_picker_timeline: ^1.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  # A build system for Dart code generation and modular compilation
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Urbanist-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Urbanist-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/Urbanist-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Urbanist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Urbanist-SemiBold.ttf
+          weight: 600
